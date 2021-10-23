@@ -121,7 +121,7 @@ sub generate_ctor
 	    $defaultVal ||= "nullptr";
         }
 
-	if ($defaultVal) {
+	if (length($defaultVal) > 0) {
 	    print "$indent$indent$name = $defaultVal;\n";
 	}
     }
